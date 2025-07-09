@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Suggest a Song | Lofi-Lounge</title>
+</head>
+<body>
+      <header class="head">
+        <nav class="navbar">
+            <h1>Lofi-Lounge</h1>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="playlist.html" >PlayLists</a></li>
+                <li><a href="suggest.html" class="active">Suggest a Song</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h2>Suggest Your Favorite Lofi Track</h2>
+
+        <form id="suggest-form" class="suggest-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="track">Track Title:</label>
+            <input type="text" id="track" name="track" required>
+
+            <label for="link">youtube link:</label>
+            <input type="url" id="link" name="link" required>
+
+            <label for="link">Spotify link:</label>
+            <input type="url" id="link" name="link" required>
+
+            <label for="message">Leave a message</label>
+            <textarea name="message" id="message" cols="4"></textarea>
+
+            <button type="submit">Submit Suggestion</button>
+            <p id="thank-you" class="hidden">Thank you for your suggestion! 🌸</p>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Coded with ☕ + 🎶 by Skye Palm</p>
+    </footer>
+    
+<script src="src/script.js"></script>
+</body>
+</html>

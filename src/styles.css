@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+}
+h1, h2, h3{
+    font-family: "Quicksand", sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2c2c3e;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+.navbar a.active{
+    color: #00abd5;
+}
+.main-content{
+    text-align: center;
+    padding: 2rem;
+}
+.hero{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.player iframe{
+    border-radius: 12px;
+    max-width: 100%;
+    box-shadow: 0 0 10px #00000055;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c2c3e;
+  margin-top: 2rem;
+}
+
+.mood-grid{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmx(160px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.mood-card{
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00000055;
+}
+.mood-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00000088;
+}
+/* Mood Background*/
+.study{background: #5a5a5a;}
+.rainy    { background: #475569; }
+.sleepy   { background: #4b4453; }
+.sunset   { background: linear-gradient(135deg, #ee9ca7, #ffdde1); color: #2e2e2e; }
+.chill    { background: #8b5cf6; }
+.focus    { background: #16a34a; }
+
+.suggest-form{
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #2c2c3e;
+    box-shadow: 0 0 10px #00000040;
+}
+.suggest-form label{
+    font-family: "Quicksand" sans-serif;
+    font-size: 1rem;
+
+}
+
+.suggest-form input, .suggest-form textarea{
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-family: "Lexend", sans-serif;
+    font-size: 1rem;
+}
+
+.suggest-form button {
+  background-color: #00adb5;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggest-form button:hover {
+  background-color: #009aa3;
+}
+
+#thank-you {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Quicksand";
+  color: #a28dcf;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.dual-players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dual-players .player {
+  flex: 1 1 350px;
+  max-width: 500px;
+}
